@@ -1,0 +1,1 @@
+strcpy(person1.name,"Jami");

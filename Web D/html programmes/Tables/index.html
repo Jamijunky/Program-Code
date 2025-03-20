@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <style>
+    .india:hover img{
+      transform: scale(1.15);
+    }
+
+    .japan:hover img{
+      transform: scale(1.15);
+    }
+
+    .usa:hover img{
+      transform: scale(1.15);
+
+    }
+
+    .australia:hover img {
+      transform: scale(1.15);
+    }
+
+    .ind,
+    .us {
+      background-color: rgb(172, 161, 246);
+    }
+
+    th,
+    .jp,
+    .aus {
+      background-color: rgb(109, 143, 222);
+    }
+
+    .India {
+      height: 50px;
+      padding: 4px 2px 0px 2px;
+      transition:  transform 0.3s ease-in-out;
+      
+    }
+
+    .Japan {
+      height: 50px;
+      padding: 4px 2px 0px 2px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .Usa {
+      height: 46px;
+      padding: 4px 2px 0px 2px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .Aus {
+      height: 45px;
+      padding: 4px 2px 0px 2px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #table,
+    th,
+    td {
+      border: 1px solid;
+      border-collapse: collapse;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <table id="table">
+    <tr>
+      <th>Country</th>
+      <th>Country Code</th>
+      <th> Email</th>
+      <th>FLAG</th>
+    </tr>
+    <tr class="ind">
+      <td>India</td>
+      <td>IN</td>
+      <td>India@google.com</td>
+      <td><a class="india" href="#"><img class="India" src="/images folder/indias flag.png" alt="India's flag" /></a>
+      </td>
+    </tr>
+    <tr class="jp">
+      <td>Japan</td>
+      <td>JP</td>
+      <td>Japan@google.com</td>
+      <td><a class="japan" href="#"><img class="Japan" src="/images folder/japans flag.jpeg" alt="Japan's flag" /></a>
+      </td>
+    </tr>
+    <tr class="us">
+      <td>United States</td>
+      <td>USA</td>
+      <td>UnitedStates@google.com</td>
+      <td><a class="usa" href="#"><img class="Usa" src="/images folder/usa flag.png" alt="United States's flag" /></a>
+      </td>
+    </tr>
+    <tr class="aus">
+      <td>Australia</td>
+      <td>AUS</td>
+      <td>Australia@google.com</td>
+      <td><a class="australia" href="#"><img class="Aus" src="/images folder/aus flag.jpeg"
+            alt="Australia's flag" /></a></td>
+    </tr>
+  </table>
+</body>
+
+</html>

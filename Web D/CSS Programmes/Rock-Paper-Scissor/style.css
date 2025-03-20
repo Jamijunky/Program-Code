@@ -1,0 +1,55 @@
+   body{
+  background-color: rgb(64, 149, 228);
+  position:absolute;
+   
+}
+h1{
+  text-align: center;
+}
+
+.game{
+  display: flex;
+  margin-left:20px;
+}
+.buttons{
+  margin-left: 20px;
+}
+.rock-img{
+  height: 90px;
+  margin-right: 45px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+  .rock-button{
+  margin-right: 95px;
+  margin-left: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgb(194, 206, 253);
+}
+.paper-img{
+  height: 90px;
+  width: 100px;
+  background-color: rgb(153, 118, 190);
+  margin-right: 40px;
+  border-radius: 10px;
+
+}
+.paper-button{
+  margin-right: 78px;
+  border-radius: 10px;
+  background-color: rgb(194, 206, 253);
+}
+.scissor-img{
+  height: 90px;
+  width: 100px;
+  background-color: white;
+  margin-right: 80px;
+  border-radius: 10px;
+}
+.scissor-button{
+  border-radius: 10px;
+  background-color: rgb(194, 206, 253);
+
+}
+  

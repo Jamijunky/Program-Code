@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add to Cart</title>
+  <link rel="stylesheet" href="add_to_cart.css">
+  
+</head>
+<body>
+  <button class="addtocart" onclick=" cartQuantity++;document.querySelector('#cart_quantity').innerText= `Current Quantity: ${cartQuantity}`;">
+    Add to Cart
+  </button> 
+  <button id="reset" onclick=" cartQuantity=0;document.querySelector('#cart_quantity').innerText= `Current Quantity: ${cartQuantity}`;">
+    Reset
+  </button>
+<h1 id="cart_quantity"></h1>
+ 
+  <script>
+   let cartQuantity=0;
+   document.querySelector('#cart_quantity').innerText= `Current Quantity: ${cartQuantity}`;
+
+
+  </script>
+</body>
+</html>

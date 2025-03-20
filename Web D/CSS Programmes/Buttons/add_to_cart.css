@@ -1,0 +1,20 @@
+    .addtocart {
+      background-color: rgb(245, 212, 91);
+      height: 23px;
+      width: 130px;
+      border-radius: 18px;
+      border: none;
+      cursor: pointer;
+      
+    }
+    .addtocart:hover {
+      opacity: 0.67;
+    }
+    #reset{
+      background-color: rgb(245, 212, 91);
+      margin-left: 40px;
+       width: 90px;
+       height: 25px;
+       border-radius: 13px;
+       border-width: 0px;
+    }

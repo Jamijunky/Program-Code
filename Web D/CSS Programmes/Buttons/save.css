@@ -1,0 +1,16 @@
+.save{
+  font-weight: 600;
+  color: #095fafeb;
+  background-color: white;
+  border-style: solid;
+  height: 30px;
+  width: 55px;
+  border-radius: 18px;
+  border-color: #095fafeb;
+  border-width: 1.0px;
+  cursor: pointer;
+}
+  .save:hover{
+    background-color: #dee9f3eb;
+    border-width: 1.5px;
+}

@@ -1,0 +1,123 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      background-color: aquamarine;
+      margin:100px ;
+      width: 100px;
+      height: 100px;
+      transform: skew(1.5);
+      transform: scale(1.5);
+      animation: hmm 1s infinite alternate;
+    }
+
+    .ball {
+      background-color: rgb(179, 45, 45);
+      width: 70px;
+      height: 70px;
+      padding-top: 40px;
+      padding-left: 40px;
+      border-radius: 50%;
+      margin: 100px;
+       animation-name: acha;
+       animation-duration: 1s;
+       animation-timing-function: ease-in-out;;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+      
+       
+    }
+
+
+    @keyframes hmm {
+      0% {
+        transform: skew(1.5deg, 0deg);
+        translate: 20px;
+        scale: 1.5;
+      }
+
+      50% {
+        transform: skew(-1.5deg, 0deg);
+        translate: 60px;
+        scale: 1;
+      }
+
+      100% {
+        transform: skew(1.5deg, 0deg);
+        translate: 100px;
+        scale: 1.5;
+      }
+
+    }
+
+    @keyframes acha {
+      0% {
+        background-color: aqua;
+        translate: 0px 0px;
+      }
+
+      10% {
+        background-color: violet;
+        translate: 10px 10px;
+      }
+
+      20% {
+        background-color: green;
+        translate: 20px 20px;
+      }
+
+      30% {
+        background-color: yellow;
+        translate: 30px 30px;
+      }
+
+      40% {
+        background-color: orange;
+        translate: 40px 40px;
+      }
+
+      50% {
+        background-color: red;
+        translate: 50px 50px;
+      }
+
+      60% {
+        background-color: blue;
+        translate: 60px 60px;
+      }
+
+      70% {
+        background-color: indigo;
+        translate: 70px 70px;
+      }
+
+      80% {
+        background-color: purple;
+        translate: 80px 80px;
+      }
+
+      90% {
+        background-color: gray;
+        translate: 90px 90px;
+      }
+
+      100% {
+        background-color: aqua;
+        translate: 100px 100px;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">Box</div>
+  <div class="ball">Ball</div>
+</body>
+
+</html>

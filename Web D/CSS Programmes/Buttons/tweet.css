@@ -1,0 +1,17 @@
+.tweet {
+  background-color: rgb(29, 161, 242);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 74px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+.tweet:hover{
+  box-shadow: 5px 5px 10px rgba(0,0,0, 0.15);
+
+}

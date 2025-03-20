@@ -1,0 +1,46 @@
+p {
+  font-family: arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title {
+
+  font-size: 15px;
+  font-weight: bold;
+  width: 250px;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+
+.stats {
+
+  font-size: 10px;
+  color: rgb(96, 96, 96);
+  margin-bottom: 10px;
+
+}
+
+.author {
+  font-family: arial;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.description {
+
+  font-size: 13px;
+  width: 290px;
+  line-height: 16px;
+
+}
+
+.advert {
+  font-size: 15px;
+  width: 264px;
+  margin-top: 100px;
+  background-color: red;
+  border-radius: 7px;
+  padding: 10px;
+  color: white;
+}

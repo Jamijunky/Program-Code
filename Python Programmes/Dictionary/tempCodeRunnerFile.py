@@ -1,0 +1,6 @@
+print(dic.items())
+# print(dic.keys())
+# print(dic.values())
+# print(dic.pop('Rudra'))
+# print(dic.update({'Nigga': 'Nothing'}))
+# print(dic.items())

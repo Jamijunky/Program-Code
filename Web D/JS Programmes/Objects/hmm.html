@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    let company={
+      price:861,
+      companyName: 'Mango',
+      'item-name': 'Jeans', // cannot use - in naming so '' required
+    } ;
+
+    console.log(company);
+    console.log(company.price);
+    console.log(company['item-name']);
+    company.price=900;
+    console.log(company['price']);
+    let propertyName = 'companyName';
+    console.log(company[propertyName]);
+    // console.log(company.propertyName);   gives error
+     
+    delete company.price;
+    console.log(company);
+
+    let product={
+      name: 'Shirt',
+      price: 150,
+      color: 'Blue',
+      rating: {
+        ratings: 4.3,
+        review: 87,
+        
+      },
+      display: function(){
+        console.log(`Price of the product is ₹${this.price}`)
+      },
+    };
+    product.display();
+    console.log(product.rating.review);
+
+     //destructuring
+      let what= product.color; // used when want to change the name
+      let{color}=product;  // used for retaining name from object
+
+
+  </script>
+</body>
+</html>

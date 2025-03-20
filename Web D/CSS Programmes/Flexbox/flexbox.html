@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    #flexbox {
+      background-color: aqua;
+      display: flex;
+      padding: 50px;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      align-self: center;
+    }
+
+    .box1 {
+      background-color: blue;
+      display: inline-block;
+      width: 60px;
+      height: 50px;
+      margin: 10px;
+      order: 5;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .box2 {
+      background-color: rgb(208, 120, 26);
+      display: inline-block;
+      width: 60px;
+      height: 50px;
+      margin: 10px;
+      border-radius: 5px;
+      flex-shrink: 4;
+      text-align: center;
+    }
+
+    .box3 {
+      background-color: rgb(0, 255, 115);
+      display: inline-block;
+      width: 60px;
+      height: 50px;
+      margin: 10px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .box4 {
+      background-color: rgb(255, 0, 81);
+      display: inline-block;
+      margin: 10px;
+      width: 60px;
+      height: 50px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .box5 {
+      background-color: rgb(255, 251, 0);
+      margin: 10px;
+      display: inline-block;
+      width: 60px;
+      height: 50px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .box6 {
+      background-color: rgb(193, 168, 168);
+      margin: 10px;
+      display: inline-block;
+      width: 60px;
+      height: 50px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .box7 {
+      background-color: rgb(110, 92, 80);
+      margin: 10px;
+      display: inline-block;
+      width: 60px;
+      height: 50px;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="flexbox">
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+    <div class="box3">Box 3</div>
+    <div class="box4">Box 4</div>
+    <div class="box5">Box 5</div>
+    <div class="box6">Box 6</div>
+    <div class="box7">Box 7</div>
+  </div>
+
+</body>
+
+</html>

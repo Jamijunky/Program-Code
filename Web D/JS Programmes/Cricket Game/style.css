@@ -1,0 +1,20 @@
+body {
+  text-align: center;
+  background: linear-gradient(to right, #1e3363, #4268b2,rgb(31, 60, 118),
+  rgb(118, 157, 216));
+
+}
+
+.choice-button {
+  height: 100px;
+  width: 100px;
+  border: none;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.choice-image {
+  height: 75px;
+}

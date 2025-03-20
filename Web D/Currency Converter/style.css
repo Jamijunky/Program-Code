@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at center, #001f3f, #000);
+    color: #00ffcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.9);
+    border: 3px solid #00ffcc;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+    text-align: center;
+    max-width: 400px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-shadow: 0 0 15px #00ffcc, 0 0 25px #0088ff;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { text-shadow: 0 0 15px #00ffcc, 0 0 25px #0088ff; }
+    100% { text-shadow: 0 0 25px #00ffcc, 0 0 40px #0088ff; }
+}
+
+form {
+    margin-top: 1.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 8px;
+    background: #003366;
+    color: #00ffcc;
+    box-shadow: 0 0 15px #0088ff;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.select-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select {
+    padding: 8px;
+    font-size: 1rem;
+    background: black;
+    color: #00ffcc;
+    border: 2px solid #0088ff;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+select:hover {
+    box-shadow: 0 0 12px #0088ff;
+}
+
+.swap {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #00ffcc;
+}
+
+.swap:hover {
+    transform: rotate(180deg);
+}
+
+button {
+    background: linear-gradient(45deg, #0088ff, #00ffcc);
+    color: black;
+    font-size: 1.1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #0088ff;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #00ffcc;
+}
+
+.result {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #00ffcc;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,20 @@
+.subscribe {
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: none;
+  padding-left: 15px; 
+  padding-right: 15px;
+  padding-top: 10px ;
+  padding-bottom:10px ;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  
+}
+  .subscribe:hover {
+    opacity: 0.8;
+  }
+
+    
+
+  

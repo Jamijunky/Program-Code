@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Light</title>
+  <style>
+    .button{
+      border-radius: 10px;
+      font-size: 18px;
+      height: 40px;
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+   <button class="button">
+    click me to change mode
+   </button>
+
+
+<script>
+  let mode="light";
+  let modebtn= document.querySelector(".button");
+  modebtn.addEventListener("click",()=> {
+    if(mode=='light'){
+      mode="black";
+      document.querySelector('body').style.backgroundColor="black";
+    }
+    else{
+      mode="light";
+      document.querySelector('body').style.backgroundColor="white";
+    }
+  });
+</script>
+
+  </body>
+
+</html>

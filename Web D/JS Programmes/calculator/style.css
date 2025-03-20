@@ -1,0 +1,28 @@
+.calculator{
+  background-color: rgb(98, 159, 159);
+  margin: 10px;
+  position: absolute;
+  border-radius: 15px;
+}
+.display{
+  margin: 20px 0px 20px 26px;
+  width: 100%; 
+}
+.display input{
+  width: 72%;
+  border-radius: 8px;
+}
+.button{
+  width: 40px;
+  height: 30px;
+  border-radius: 50px;
+  align-items: center;
+  background-color: rgb(182, 180, 180);
+  margin-top: 10px;
+}
+.keys{
+  display: grid;
+  grid-template-columns: repeat(4,50px);
+  margin: 25px;
+  margin-top: -18px;
+}
