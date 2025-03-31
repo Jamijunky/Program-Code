@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Magazine Carousel</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="magazine-wrapper">
+    <header class="magazine-header">
+      <div class="logo">ELITE</div>
+      <div class="tagline">The Art of Modern Living</div>
+    </header>
+    
+    <div class="premium-carousel">
+      <div class="carousel-progress">
+        <div class="progress-bar"></div>
+      </div>
+      
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- Carousel items -->
+          <div class="carousel-item">
+            <div class="item-content">
+              <div class="item-image">
+                <img src="/images folder/a to zucchini.jpeg" alt="Fashion Editorial">
+                <div class="image-overlay"></div>
+              </div>
+              <div class="item-text">
+                <div class="item-category">FASHION</div>
+                <h2 class="item-title">The New Silhouettes Defining Modern Elegance</h2>
+                <p class="item-excerpt">Explore how contemporary designers are reshaping traditional forms with bold architectural influences and sustainable materials.</p>
+                <div class="item-meta">
+                  <span class="item-author">By Alexandra Chen</span>
+                  <span class="item-date">June 2023</span>
+                </div>
+                <a href="#" class="read-more">
+                  <span>Read Feature</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="item-content">
+              <div class="item-image">
+                <img src="/images folder/Chocolate island.jpg" alt="Travel Destination">
+                <div class="image-overlay"></div>
+              </div>
+              <div class="item-text">
+                <div class="item-category">TRAVEL</div>
+                <h2 class="item-title">Hidden Sanctuaries: Luxury Retreats Beyond the Beaten Path</h2>
+                <p class="item-excerpt">Discover exclusive destinations where privacy meets unparalleled natural beauty, offering a new perspective on luxury travel.</p>
+                <div class="item-meta">
+                  <span class="item-author">By Marco Rossi</span>
+                  <span class="item-date">June 2023</span>
+                </div>
+                <a href="#" class="read-more">
+                  <span>Explore Destinations</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="item-content">
+              <div class="item-image video-feature">
+                <img src="/images folder/lemon posset.jpeg" alt="Culinary Arts">
+                <div class="image-overlay"></div>
+                <div class="video-indicator">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="item-text">
+                <div class="item-category">CULINARY</div>
+                <h2 class="item-title">The Art of Fermentation: Ancient Techniques Reimagined</h2>
+                <p class="item-excerpt">How leading chefs are reviving forgotten preservation methods to create bold new flavors and sustainable kitchen practices.</p>
+                <div class="item-meta">
+                  <span class="item-author">By Olivia Kim</span>
+                  <span class="item-date">June 2023</span>
+                </div>
+                <a href="#" class="read-more">
+                  <span>Watch Feature</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="item-content">
+              <div class="item-image">
+                <img src="/images folder/roasted brussel sprouts.jpeg" alt="Architecture">
+                <div class="image-overlay"></div>
+              </div>
+              <div class="item-text">
+                <div class="item-category">DESIGN</div>
+                <h2 class="item-title">Living Minimalism: The New Wave of Conscious Design</h2>
+                <p class="item-excerpt">Exploring how architects and interior designers are creating spaces that balance aesthetic beauty with environmental responsibility.</p>
+                <div class="item-meta">
+                  <span class="item-author">By David Nakamura</span>
+                  <span class="item-date">June 2023</span>
+                </div>
+                <a href="#" class="read-more">
+                  <span>View Gallery</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="item-content">
+              <div class="item-image">
+                <img src="/images folder/zucchini cake.jpeg" alt="Art Exhibition">
+                <div class="image-overlay"></div>
+              </div>
+              <div class="item-text">
+                <div class="item-category">CULTURE</div>
+                <h2 class="item-title">Digital Renaissance: When Technology Meets Classical Art</h2>
+                <p class="item-excerpt">How emerging artists are using AI and digital tools to reinterpret masterpieces and create entirely new forms of artistic expression.</p>
+                <div class="item-meta">
+                  <span class="item-author">By Sophia Williams</span>
+                  <span class="item-date">June 2023</span>
+                </div>
+                <a href="#" class="read-more">
+                  <span>Explore Exhibition</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Enhanced navigation controls -->
+        <div class="carousel-navigation">
+          <button class="nav-button prev" aria-label="Previous article">
+            <div class="button-content">
+              <i class="fas fa-chevron-left"></i>
+              <span class="nav-text">Previous</span>
+            </div>
+          </button>
+          
+          <div class="carousel-counter">
+            <span class="current">01</span>
+            <span class="separator">/</span>
+            <span class="total">05</span>
+          </div>
+          
+          <button class="nav-button next" aria-label="Next article">
+            <div class="button-content">
+              <span class="nav-text">Next</span>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Thumbnail navigation -->
+      <div class="thumbnail-navigation">
+        <div class="thumbnail active" data-index="0">
+          <img src="path/to/your/image1.jpg" alt="Thumbnail 1">
+        </div>
+        <div class="thumbnail" data-index="1">
+          <img src="path/to/your/image2.jpg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" data-index="2">
+          <img src="path/to/your/image3.jpg" alt="Thumbnail 3">
+        </div>
+        <div class="thumbnail" data-index="3">
+          <img src="path/to/your/image4.jpg" alt="Thumbnail 4">
+        </div>
+        <div class="thumbnail" data-index="4">
+          <img src="path/to/your/image5.jpg" alt="Thumbnail 5">
+        </div>
+      </div>
+    </div>
+    
+    <div class="featured-articles">
+      <h3 class="section-title">More Featured Stories</h3>
+      <div class="articles-grid">
+        <!-- Additional article teasers would go here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

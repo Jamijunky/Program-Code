@@ -9,7 +9,11 @@
       border-radius: 10px;
       font-size: 18px;
       height: 40px;
-      background-color: aqua;
+      background-color: black;
+      color: white;
+    }
+    body{
+      background-color: white;
     }
   </style>
 </head>
@@ -26,10 +30,14 @@
     if(mode=='light'){
       mode="black";
       document.querySelector('body').style.backgroundColor="black";
+      document.querySelector('.button').style.backgroundColor="white";
+      document.querySelector('.button').style.color="black";
     }
     else{
       mode="light";
       document.querySelector('body').style.backgroundColor="white";
+      document.querySelector('.button').style.backgroundColor="black";
+      document.querySelector('.button').style.color="white";
     }
   });
 </script>
