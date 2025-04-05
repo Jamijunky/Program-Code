@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <limits>  
 using namespace std;
 
 class Person {
@@ -34,10 +35,16 @@ public:
 
     void acceptEmployeeDetails() {
         acceptPersonDetails();
+        
         cout << "Enter Employee ID: ";
-        cin >> empID;
-        cout << "Enter Department: ";
+        while (!(cin >> empID)) {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Invalid input. Please enter a number for ID: ";
+        }
         cin.ignore();
+        
+        cout << "Enter Department: ";
         getline(cin, department);
     }
 
