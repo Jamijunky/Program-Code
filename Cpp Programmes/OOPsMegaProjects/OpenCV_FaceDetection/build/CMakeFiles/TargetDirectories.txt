@@ -1,0 +1,3 @@
+/Users/jami/Desktop/Codes/Cpp Programmes/OOPsMegaProjects/OpenCV_FaceDetection/build/CMakeFiles/FaceDetection.dir
+/Users/jami/Desktop/Codes/Cpp Programmes/OOPsMegaProjects/OpenCV_FaceDetection/build/CMakeFiles/edit_cache.dir
+/Users/jami/Desktop/Codes/Cpp Programmes/OOPsMegaProjects/OpenCV_FaceDetection/build/CMakeFiles/rebuild_cache.dir
