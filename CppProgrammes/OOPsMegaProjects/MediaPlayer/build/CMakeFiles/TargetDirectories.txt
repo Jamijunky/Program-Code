@@ -1,0 +1,3 @@
+/Users/jami/Desktop/Codes/CppProgrammes/OOPsMegaProjects/MediaPlayer/build/CMakeFiles/MediaPlayer.dir
+/Users/jami/Desktop/Codes/CppProgrammes/OOPsMegaProjects/MediaPlayer/build/CMakeFiles/edit_cache.dir
+/Users/jami/Desktop/Codes/CppProgrammes/OOPsMegaProjects/MediaPlayer/build/CMakeFiles/rebuild_cache.dir
