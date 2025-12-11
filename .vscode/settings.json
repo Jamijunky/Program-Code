@@ -16,5 +16,14 @@
     "-Wall",
     "-Wextra",
     "-Wpedantic"
-  ]
+  ],
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.hg/store/**": true,
+    "**/.git/**": true,
+    "**/node_modules/**": true,
+    "**/.vscode/**": true
+  },
+  "cmake.sourceDirectory": "/Users/jami/Desktop/Codes/CppProgrammes/OOPsMegaProjects/MediaPlayer"
 }
