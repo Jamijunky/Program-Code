@@ -1,61 +1,70 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-struct Process
-{
-  int pid;
-  int burstTime;
-  int priority;
-  int waitingTime;
-  int turnaroundTime;
+struct Process {
+    int id;
+    int burstTime;
+    int priority;
 };
 
-int main()
-{
-  int n;
-  cout << "Enter number of processes: ";
-  cin >> n;
+bool compare(Process a, Process b) {
+    return a.priority < b.priority; // Lower number = higher priority
+}
 
-  Process p[n];
+int main() {
+    int n;
+    cout << "Enter number of processes: ";
+    cin >> n;
 
-  for (int i = 0; i < n; i++)
-  {
-    p[i].pid = i + 1;
-    cout << "\nProcess " << p[i].pid << endl;
-    cout << "Burst Time: ";
-    cin >> p[i].burstTime;
-    cout << "Priority: ";
-    cin >> p[i].priority;
-  }
+    vector<Process> p(n);
 
-  for (int i = 0; i < n - 1; i++)
-  {
-    for (int j = i + 1; j < n; j++)
-    {
-      if (p[i].priority > p[j].priority)
-      {
-        swap(p[i], p[j]);
-      }
+    for (int i = 0; i < n; i++) {
+        p[i].id = i + 1;
+
+        cout << "Enter Burst Time for P" << i + 1 << ": ";
+        cin >> p[i].burstTime;
+
+        cout << "Enter Priority for P" << i + 1 << ": ";
+        cin >> p[i].priority;
     }
-  }
 
-  p[0].waitingTime = 0;
-  for(int i=1;i<n;i++){
-    p[i].waitingTime=p[i-1].waitingTime+p[i-1].burstTime;
-  }
+    // Sort by priority
+    sort(p.begin(), p.end(), compare);
 
-  for (int i = 0; i < n; i++)
-  {
-    p[i].turnaroundTime = p[i].waitingTime + p[i].burstTime;
-  }
+    vector<int> wt(n), tat(n);
 
-  cout << "\nPID\tBT\tPR\tWT\tTAT\n";
-  for (int i = 0; i < n; i++)
-  {
-    cout << p[i].pid << "\t"
-         << p[i].burstTime << "\t"
-         << p[i].priority << "\t"
-         << p[i].waitingTime << "\t"
-         << p[i].turnaroundTime << endl;
-  }
+    // Waiting Time
+    wt[0] = 0;
+    for (int i = 1; i < n; i++) {
+        wt[i] = wt[i - 1] + p[i - 1].burstTime;
+    }
+
+    // Turnaround Time
+    for (int i = 0; i < n; i++) {
+        tat[i] = wt[i] + p[i].burstTime;
+    }
+
+    double avgWT = 0, avgTAT = 0;
+
+    cout << "\nProcess\tBT\tPriority\tWT\tTAT\n";
+
+    for (int i = 0; i < n; i++) {
+        cout << "P" << p[i].id << "\t"
+             << p[i].burstTime << "\t"
+             << p[i].priority << "\t\t"
+             << wt[i] << "\t"
+             << tat[i] << endl;
+
+        avgWT += wt[i];
+        avgTAT += tat[i];
+    }
+
+    avgWT /= n;
+    avgTAT /= n;
+
+    cout << "\nAverage Waiting Time = " << avgWT << endl;
+    cout << "Average Turnaround Time = " << avgTAT << endl;
+
+    return 0;
 }
