@@ -16,5 +16,48 @@
         "}"
       ],
       "description": "Basic C++ program structure"
-    }
+    },
+  
+
+  
+  "Codeforces Boilerplate": {
+    "prefix": "codeforces boiler",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "using ll = long long;",
+      "using ull = unsigned long long;",
+      "using ld = long double;",
+      "using pii = pair<int, int>;",
+      "using pll = pair<ll, ll>;",
+      "",
+      "const int INF = 1e9;",
+      "const ll LINF = 1e18;",
+      "",
+      "void Solve() {",
+      "\t$0",
+      "}",
+      "",
+      "int main() {",
+      "\tios::sync_with_stdio(false);",
+      "\tcin.tie(nullptr);",
+      "",
+      "#ifndef ONLINE_JUDGE",
+      "\tfreopen(\"IO/input.txt\", \"r\", stdin);",
+      "\tfreopen(\"IO/output.txt\", \"w\", stdout);",
+      "#endif",
+      "",
+      "\tint t = 1;",
+      "\tcin >> t;",
+      "",
+      "\twhile (t--) {",
+      "\t\tSolve();",
+      "\t}",
+      "",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "Codeforces Competitive Programming Boilerplate"
   }
+}
