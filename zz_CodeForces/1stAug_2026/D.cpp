@@ -11,7 +11,24 @@ const int INF = 1e9;
 const ll LINF = 1e18;
 
 void Solve() {
+  int n, q;
+  cin >> n >> q;
+  string s, t;
+  cin >> s >> t;
   
+  vector<int> prefA(n + 1, 0), prefB(n + 1, 0);
+  for (int i = 0; i < n; ++i) {
+    prefA[i + 1] = prefA[i] + (s[i] == '0' && t[i] == '1');
+    prefB[i + 1] = prefB[i] + (s[i] == '1' && t[i] == '0');
+  }
+  
+  while (q--) {
+    int l, r;
+    cin >> l >> r;
+    int a = prefA[r] - prefA[l - 1];
+    int b = prefB[r] - prefB[l - 1];
+    cout << (2 * max(a, b) <= r - l + 1 ? "YES\n" : "NO\n");
+  }
 }
 
 int main() {
